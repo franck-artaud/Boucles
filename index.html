@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">    
+<script>
+var i = 0;
+while (i < 11) {
+    console.log(i);
+    i++
+    }
+
+    for( var j = 0; j < 15; j++){
+        console.log(j);
+    }
+
+    var eleve=["Jean","Pierre","Jacques","Noémie", "Solange"]
+    for (var e = 0; e < eleve.length; e++){
+console.log( "Bonjour " +eleve[e]);
+
+    }
+
+    var eleve=["Jean","Pierre","Jacques","Noémie", "Solange"]
+    for (var f = eleve.length-1; f>=0; f--){  
+console.log( "Bonjour " +eleve[f]);
+
+    }
+/* Nous allons créer une boucle pour savoir si un nombre est premier; pour cela nous allons d'abord l'écire en pseudo code
+pour le réecrire en javascript
+Un nombre est premier que si il est divisible par 1 ou par lui_même. Un nombre n'est pas premier quand il est divisible
+par un nombre compris entre 2 et lui-même -1
+*/
+console.log(91)
+var nombre = 91
+var estPremier = true
+
+for(var n = 2; n < nombre; n++){
+if(nombre % n === 0){
+    estPremier = false
+    console.log("Ce nombre n'est pas un nombre premier")
+    console.log(nombre + " Ce nombre est divisible par " +n)
+    break
+}
+
+}
+if (estPremier){
+    console.log(nombre + " Ce nombre est un nombre premier")
+
+}
+
+console.log(31)
+var nombre = 31
+var estPremier = true
+
+for(var k = 2; k < nombre; k++){
+if(nombre % k === 0){
+    estPremier = false
+    console.log("Ce nombre n'est pas un nombre premier")
+    console.log(nombre + " Ce nombre est divisible par " +k)
+    break
+}
+
+}
+if (estPremier){
+
+    console.log(nombre + " Ce nombre est un nombre premier")
+}
+
+var eleves = [
+    {
+    nom:"Marc",
+    moyenne:15
+    },
+    {
+    nom:"Marion",
+    moyenne:12
+    },
+    {
+    nom :"Pierre",
+    moyenne:9
+    },
+    {
+    nom :"René",
+    moyenne:8   
+    }
+];
+
+console.log(eleves[0].nom + " a " +eleves[0].moyenne +" de moyenne" )
+
+for(u = 0; u < eleves.length; u++){
+    var eleve = eleves[u]
+    if(eleve.moyenne < 10 ){
+        console.log(eleve.nom + " m'a pas la moyenne");
+    }else{
+        console.log(eleve.nom + " a la moyenne");
+    }
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
